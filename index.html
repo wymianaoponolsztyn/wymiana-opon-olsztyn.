@@ -5,9 +5,7 @@ HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Wymiana opon w Olsztynie. Zapraszamy na Edwarda Abramowskiego 1D.">
-
     <title>Wymiana Opon Olsztyn</title>
 
     <style>
@@ -56,35 +54,18 @@ HTML
         }
 
         .hero {
-            min-height: 530px;
-            padding: 100px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background: #111;
+            padding: 25px 15px 45px;
             text-align: center;
-            background: radial-gradient(
-                ellipse at center,
-                #393000 0%,
-                #191919 55%,
-                #080808 100%
-            );
         }
 
-        .hero h1 {
-            font-size: clamp(36px, 8vw, 65px);
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #ffd400;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: #ddd;
-            margin-bottom: 25px;
+        .banner {
+            display: block;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            margin: 0 auto 25px;
+            border-radius: 10px;
         }
 
         .button {
@@ -146,6 +127,17 @@ HTML
             color: #ffd400;
         }
 
+        .business-card {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            margin: 30px auto 0;
+            border-radius: 10px;
+            border: 2px solid #ffd400;
+            cursor: zoom-in;
+        }
+
         .hours {
             background: #202020;
         }
@@ -175,16 +167,20 @@ HTML
             }
 
             .hero {
-                min-height: 450px;
-            }
-
-            .hero p {
-                font-size: 17px;
+                padding: 15px 10px 35px;
             }
 
             .button {
                 font-size: 16px;
                 padding: 14px 20px;
+            }
+
+            section {
+                padding: 45px 15px;
+            }
+
+            section h2 {
+                font-size: 27px;
             }
         }
     </style>
@@ -204,32 +200,38 @@ HTML
     <main>
 
         <div class="hero">
-            <h1>
-                WYMIANA OPON<br>
-                <span>OLSZTYN</span>
-            </h1>
 
-            <p>Zapraszamy do naszego serwisu!</p>
+            <img
+                class="banner"
+                src="images/banner_wymiana_opon_na_strone_eb93da63.jpg"
+                alt="Baner reklamowy Wymiana Opon Olsztyn"
+            >
 
             <a class="button" href="tel:+48888937345">
                 ☎ ZADZWOŃ: 888 937 345
             </a>
+
         </div>
 
         <section class="services" id="uslugi">
+
             <h2>Nasza usługa</h2>
 
             <div class="service-box">
+
                 <h3>Wymiana opon</h3>
 
                 <p>
                     Zapraszamy do naszego punktu w Olsztynie.
                     Zadzwoń i odwiedź nasz serwis.
                 </p>
+
             </div>
+
         </section>
 
         <section class="contact" id="kontakt">
+
             <h2>Znajdź nas</h2>
 
             <p><strong>Adres:</strong></p>
@@ -252,14 +254,29 @@ HTML
                     Zobacz lokalizację na mapie
                 </a>
             </p>
+
+            <a
+                href="images/wizytowka_wymiana_opon_olsztyn_caba40a5.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    class="business-card"
+                    src="images/wizytowka_wymiana_opon_olsztyn_caba40a5.jpg"
+                    alt="Wizytówka Wymiana Opon Olsztyn"
+                >
+            </a>
+
         </section>
 
         <section class="hours">
+
             <h2>Godziny otwarcia</h2>
 
             <p>Poniedziałek – Piątek: 9:00–18:00</p>
             <p>Sobota: 9:00–14:00</p>
             <p>Niedziela: nieczynne</p>
+
         </section>
 
     </main>
