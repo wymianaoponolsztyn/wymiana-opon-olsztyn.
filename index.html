@@ -5,8 +5,12 @@ HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wymiana opon w Olsztynie. Zapraszamy na Edwarda Abramowskiego 1D.">
-    <title>Wymiana Opon Olsztyn</title>
+
+    <meta name="description" content="Wymiana opon Olsztyn. Zapraszamy na Edwarda Abramowskiego 1D. Zadzwoń: 888 937 345.">
+
+    <meta name="robots" content="index, follow">
+
+    <title>Wymiana Opon Olsztyn – 888 937 345</title>
 
     <style>
         * {
@@ -77,7 +81,6 @@ HTML
             font-weight: 900;
             text-decoration: none;
             border-radius: 6px;
-            transition: 0.2s;
         }
 
         .button:hover {
@@ -135,7 +138,33 @@ HTML
             margin: 30px auto 0;
             border-radius: 10px;
             border: 2px solid #ffd400;
-            cursor: zoom-in;
+        }
+
+        .map-container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            border: 2px solid #ffd400;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        .route-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 15px 25px;
+            background: #ffd400;
+            color: #111 !important;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
         }
 
         .hours {
@@ -182,6 +211,10 @@ HTML
             section h2 {
                 font-size: 27px;
             }
+
+            .map-container iframe {
+                height: 300px;
+            }
         }
     </style>
 </head>
@@ -204,8 +237,7 @@ HTML
             <img
                 class="banner"
                 src="images/banner_wymiana_opon_na_strone_eb93da63.jpg"
-                alt="Baner reklamowy Wymiana Opon Olsztyn"
-            >
+                alt="Baner reklamowy Wymiana Opon Olsztyn">
 
             <a class="button" href="tel:+48888937345">
                 ☎ ZADZWOŃ: 888 937 345
@@ -235,7 +267,7 @@ HTML
             <h2>Znajdź nas</h2>
 
             <p><strong>Adres:</strong></p>
-            <p>Edwarda Abramowskiego 1D, Olsztyn</p>
+            <p>Edwarda Abramowskiego 1D, 10-241 Olsztyn</p>
 
             <p><strong>Telefon:</strong></p>
 
@@ -245,26 +277,37 @@ HTML
                 </a>
             </p>
 
-            <p>
-                <a
-                    href="https://www.google.com/maps/search/?api=1&query=Edwarda+Abramowskiego+1D+Olsztyn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Zobacz lokalizację na mapie
-                </a>
-            </p>
+            <h2 style="margin-top: 35px;">Jak do nas trafić?</h2>
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=53.7960539,20.5000293&z=16&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+            <a
+                class="route-button"
+                href="https://www.google.com/maps/dir/?api=1&destination=53.7960539,20.5000293"
+                target="_blank"
+                rel="noopener noreferrer">
+                🚗 WYZNACZ TRASĘ DO NASZEGO SERWISU
+            </a>
 
             <a
                 href="images/wizytowka_wymiana_opon_olsztyn_caba40a5.jpg"
                 target="_blank"
-                rel="noopener noreferrer"
-            >
+                rel="noopener noreferrer">
+
                 <img
                     class="business-card"
                     src="images/wizytowka_wymiana_opon_olsztyn_caba40a5.jpg"
-                    alt="Wizytówka Wymiana Opon Olsztyn"
-                >
+                    alt="Wizytówka Wymiana Opon Olsztyn">
+
             </a>
 
         </section>
@@ -283,6 +326,8 @@ HTML
 
     <footer>
         <p>WYMIANA OPON OLSZTYN</p>
+        <p>Edwarda Abramowskiego 1D</p>
+        <p>Telefon: 888 937 345</p>
         <p>Zapraszamy!</p>
     </footer>
 
